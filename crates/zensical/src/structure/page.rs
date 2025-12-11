@@ -103,7 +103,7 @@ impl Page {
         // Retrieve repository URL and edit URI and raw URI
         let repo_url = config.project.repo_url.clone();
         let edit_uri = config.project.edit_uri.clone();
-        let raw_url = config.project.raw_uri.clone();
+        let raw_uri = config.project.raw_uri.clone();
 
         // Determine whether to use directory URLs
         let use_directory_urls = config.project.use_directory_urls;
@@ -164,6 +164,16 @@ impl Page {
         // variants are supported by MkDocs, so we mirror behavior for now
         let edit_url = repo_url.clone().and_then(|repo_url| {
             edit_uri.clone().map(|uri| {
+                if uri.starts_with("https://") {
+                    format!("{uri}/{file_uri}")
+                } else {
+                    format!("{repo_url}/{uri}/{file_uri}")
+                }
+            })
+        });
+        
+        let raw_url = repo_url.clone().and_then(|repo_url| {
+            raw_uri.clone().map(|uri| {
                 if uri.starts_with("https://") {
                     format!("{uri}/{file_uri}")
                 } else {
