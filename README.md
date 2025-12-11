@@ -1,3 +1,14 @@
+# zensical-amase
+**PLEASE NOT REPORT ANY BUGS ENCOUNTERED IN zensical-amase TO zensical/zensical!**
+
+This is a customized zensical fork for my personal use.
+
+Normally, should use official Zensical. If you want use this fork, you shouldn't expect my support.
+
+
+---
+
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zensical/zensical/master/.github/assets/zensical-dark.png">
