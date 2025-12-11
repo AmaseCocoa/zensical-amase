@@ -227,7 +227,7 @@ wheels = [
 ]
 
 [[package]]
-name = "zensical"
+name = "zensical-amase"
 source = { editable = "." }
 dependencies = [
     { name = "click" },

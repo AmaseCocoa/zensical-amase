@@ -39,7 +39,7 @@ def main():
     os.makedirs("tmp", exist_ok=True)
 
     # Clone UI repository into tmp directory
-    repo_url = "https://github.com/zensical/ui.git"
+    repo_url = "https://github.com/AmaseCocoa/zensical-ui.git"
     dest_dir = os.path.join("tmp", "ui")
     if not os.path.exists(dest_dir):
         subprocess.run(["git", "clone", repo_url, dest_dir], check=True)
