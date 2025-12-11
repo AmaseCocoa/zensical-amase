@@ -26,10 +26,13 @@ requires = ["maturin>=1.8,<2.0"]
 build-backend = "maturin"
 
 [project]
-name = "zensical"
-description = "A modern static site generator built by the creators of Material for MkDocs"
+name = "zensical-amase"
+description = "This is a customized zensical fork for my personal use."
 authors = [
     { name = "Zensical", email = "contributors@zensical.org" }
+]
+maintainers = [
+    { name = "AmaseCocoa", email = "cocoa@amase.cc" }
 ]
 license = { text = "MIT" }
 readme = "README.md"
@@ -59,9 +62,9 @@ dependencies = [
 [project.urls]
 Homepage = "https://zensical.org/"
 Documentation = "https://zensical.org/docs/"
-Source = "https://github.com/zensical/zensical/"
+Source = "https://github.com/AmaseCocoa/zensical-amase/"
 Changelog = "https://zensical.org/docs/changelog/"
-Issues = "https://github.com/zensical/zensical/issues"
+Issues = "https://github.com/AmaseCocoa/zensical-amase/issues"
 
 [project.scripts]
 zensical = "zensical.main:cli"
