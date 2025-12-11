@@ -190,6 +190,11 @@ def _apply_defaults(config: dict, path: str) -> dict:
     edit_uri = config.get("edit_uri")
     if isinstance(edit_uri, str) and edit_uri.endswith("/"):
         config["edit_uri"] = edit_uri.rstrip("/")
+    
+    
+    raw_uri = config.get("raw_uri")
+    if isinstance(raw_uri, str) and raw_uri.endswith("/"):
+        config["raw_uri"] = raw_uri.rstrip("/")
 
     # Set defaults for theme font settings
     theme = set_default(config, "theme", {}, dict)
