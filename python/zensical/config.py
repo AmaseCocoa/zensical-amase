@@ -167,6 +167,7 @@ def _apply_defaults(config: dict, path: str) -> dict:
     set_default(config, "repo_name", None, str)
     set_default(config, "edit_uri_template", None, str)
     set_default(config, "edit_uri", None, str)
+    set_default(config, "raw_uri", None, str)
 
     # Set defaults for repository name settings
     repo_url = config.get("repo_url")
