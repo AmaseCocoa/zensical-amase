@@ -48,7 +48,7 @@ classifiers = [
     "Topic :: Text Processing :: Markup :: HTML",
     "Topic :: Text Processing :: Markup :: Markdown",
 ]
-dynamic = ["version"]
+version = "0.0.11.post2"
 dependencies = [
     "click>=8.1.8",
     "deepmerge>=2.0",

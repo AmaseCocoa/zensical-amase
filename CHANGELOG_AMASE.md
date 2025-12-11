@@ -1,4 +1,4 @@
-# 0.0.11.post1
+# 0.0.11.post2
 
 ## Features
 - Added `raw_uri` so it can be configured independently from `edit_uri`
