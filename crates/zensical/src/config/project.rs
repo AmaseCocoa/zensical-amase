@@ -70,6 +70,8 @@ pub struct Project {
     pub edit_uri_template: Option<String>,
     /// Edit URI.
     pub edit_uri: Option<String>,
+    /// URI to RAW File.
+    pub raw_uri: Option<String>,
     /// Theme settings.
     pub theme: Theme,
     /// Extra settings.

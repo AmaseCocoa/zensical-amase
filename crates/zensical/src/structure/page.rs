@@ -64,6 +64,8 @@ pub struct Page {
     pub canonical_url: Option<String>,
     /// Page edit URL.
     pub edit_url: Option<String>,
+    /// Raw document URL.
+    pub raw_url: Option<String>,
     /// Page title.
     pub title: String,
     /// Page metadata.
@@ -98,9 +100,10 @@ impl Page {
         let site_dir = config.project.site_dir.clone();
         let site_url = config.project.site_url.clone();
 
-        // Retrieve repository URL and edit URI
+        // Retrieve repository URL and edit URI and raw URI
         let repo_url = config.project.repo_url.clone();
         let edit_uri = config.project.edit_uri.clone();
+        let raw_uri = config.project.raw_uri.clone();
 
         // Determine whether to use directory URLs
         let use_directory_urls = config.project.use_directory_urls;
@@ -180,6 +183,7 @@ impl Page {
             meta: markdown.meta,
             canonical_url,
             edit_url,
+            raw_url,
             content: markdown.content,
             toc: markdown.toc,
             search: markdown.search,
