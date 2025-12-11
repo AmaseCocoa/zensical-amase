@@ -103,7 +103,7 @@ impl Page {
         // Retrieve repository URL and edit URI and raw URI
         let repo_url = config.project.repo_url.clone();
         let edit_uri = config.project.edit_uri.clone();
-        let raw_uri = config.project.raw_uri.clone();
+        let raw_url = config.project.raw_uri.clone();
 
         // Determine whether to use directory URLs
         let use_directory_urls = config.project.use_directory_urls;
